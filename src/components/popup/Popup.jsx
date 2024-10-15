@@ -3,7 +3,7 @@ import CountDownTimer from "../SmallComponents/Timer";
 import "./style.css";
 import { useEffect, useState } from "react";
 
-function Popup() {
+function Popup({ onClosePopup }) {
 
     const [popup, setPopup] = useState(false);
 
@@ -13,6 +13,7 @@ function Popup() {
 
     function handleClosePopup() {
         setPopup(false);
+        onClosePopup(popup)
     }
 
     return (

@@ -30,6 +30,10 @@ function HambergerMenu({ onClose, isClose }) {
                                 <a href="https://gleam.io/PJyiu/captain-hook-giveaway">{item.text}</a>
                             </li>
                         )
+                    } else if (item.text === "VIP Club") {
+                        return (
+                            <li key={item.id} className="cursor-pointer text-sunset-yellow" >{item.text}</li>
+                        )
                     } else {
                         return (
                             <li key={item.id} className="cursor-pointer">

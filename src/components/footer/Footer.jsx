@@ -10,14 +10,14 @@ function Footer() {
             <img src={Wood} alt="footer" loading="lazy" className="h-[80px] object-cover mb-10 lg:hidden"/>
             <div className="lg:h-[220px] lg:bg-footer bg-cover">
                 <Container>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 lg:pt-[95px]">
-                        <div>
+                    <div className="grid grid-cols-1 lg:grid-cols-12 lg:pt-[95px]">
+                        <div className="lg:col-span-4">
                             <figure className="w-[80px] h-[80px] mx-auto lg:mx-0 mb-5 lg:mb-0">
                                 <img src={Logo} alt="Capitan Hook" loading="lazy" className="w-full h-full" />
                             </figure>
                             <p className="hidden lg:block open-sans-Medium text-white text-base mt-2">CaptainHook©2024. All rights reserved.</p>
                         </div>
-                        <div>
+                        <div className="lg:col-span-8">
                             <ul className="h-[50px] flex flex-wrap items-center justify-center lg:justify-end space-x-4 lg:space-x-6 open-sans-Medium text-white text-base">
                                 {DATA.HEADER_LEFT.map(item => {
                                     if (item.text === "$12,000 Giveaway") {
@@ -25,6 +25,10 @@ function Footer() {
                                             <li key={item.id} className="cursor-pointer">
                                                 <a href="https://gleam.io/PJyiu/captain-hook-giveaway">{item.text}</a>
                                             </li>
+                                        )
+                                    } else if (item.text === "VIP Club") {
+                                        return (
+                                            <li key={item.id} className="cursor-pointer text-sunset-yellow" >{item.text}</li>
                                         )
                                     } else {
                                         return (

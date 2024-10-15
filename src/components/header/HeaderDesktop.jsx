@@ -42,11 +42,15 @@ function HeaderDesktop({ onShow }) {
                                     </svg>
                                     <ul className="hidden h-full xl:flex items-center space-x-6 open-sans-Medium text-white text-base">
                                         {DATA.HEADER_LEFT.map(item => {
-                                            if (item.text === "$12,000 Giveaway") {
+                                            if (item.text === "Giveaway") {
                                                 return (
                                                     <li key={item.id} className="cursor-pointer">
                                                         <a href="https://gleam.io/PJyiu/captain-hook-giveaway">{item.text}</a>
                                                     </li>
+                                                )
+                                            } else if (item.text === "VIP Club") {
+                                                return (
+                                                    <li key={item.id} className="cursor-pointer text-sunset-yellow" >{item.text}</li>
                                                 )
                                             } else {
                                                 return (
@@ -67,8 +71,26 @@ function HeaderDesktop({ onShow }) {
                                     </ul>
                                 </div>
                                 <div className="xl:col-span-5 flex items-center justify-end space-x-6">
-                                    <div className="flex items-center gap-10 xl:hidden">
-                                        <a href="https://captain-hook.gitbook.io/white-paper" className="open-sans-Medium text-base text-sunset-yellow">Whitepaper</a>
+                                    <div className="flex items-center gap-2 sm:gap-5 xl:hidden">
+                                        <ul className="h-full flex xl:hidden items-center justify-end space-x-2 sm:space-x-6 open-sans-Medium text-base">
+                                            {DATA.HEADER_RIGHT.map(item => {
+                                                let styles;
+                                                if (item.text === "AUDIT") {
+                                                    styles = "bg-sunset-yellow w-[75px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
+                                                } else if (item.text === "KYC") {
+                                                    styles = "bg-sunset-yellow w-[59px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
+                                                } else if (item.text === "Play") {
+                                                    styles = "hidden";
+                                                } else {
+                                                    styles = "text-sunset-yellow";
+                                                }
+                                                return (
+                                                    <li key={item.id} className={styles} >
+                                                        <a href={item.link} className="block w-full h-full text-center">{item.text}</a>
+                                                    </li>
+                                                )
+                                            })}
+                                        </ul>
                                         <figure className="h-[55px] w-[55px]">
                                             <img src={Logo} alt="Capitan Hook" loading="lazy" className="h-[55px] w-[55px]" />
                                         </figure>
@@ -116,7 +138,7 @@ function HeaderDesktop({ onShow }) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         </header >
     );
 }
