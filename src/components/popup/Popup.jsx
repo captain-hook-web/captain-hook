@@ -17,7 +17,7 @@ function Popup() {
 
     return (
         <div className={`${popup ? "flex items-center justify-center w-full h-[100vh] bg-[#0b1023e6] fixed top-0 left-0 z-[1500]" : "hidden"}`}>
-            <div className="relative bg-popup bg-no-repeat bg-[length:100%_100%] w-full max-w-[500px] h-auto pt-32 mt-10 scale-[.7] xl:scale-[1]">
+            <div className="relative bg-popup bg-no-repeat bg-[length:100%_100%] w-full max-w-[500px] h-auto pt-28 sm:pt-32  mt-10 scale-[.7] xl:scale-[1]">
                 <img src={Vip} alt="Vip Club" loading="lazy" className="w-[100%] absolute left-0 top-[-120px]" />
                 <h4 className="title-popup w-[85%] mx-auto text-white text-center text-[15px]">Join the VIP Club for Captain Hook Presale Stage 1!</h4>
                 <p className="w-[70%] mx-auto open-sans-Medium text-white text-center text-[12px] my-2">For the FIRST TIME EVER, we're excited to launch our VIP Club for early participants!</p>

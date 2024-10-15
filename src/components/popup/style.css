@@ -10,6 +10,7 @@
     -moz-border-radius: 8px !important;
     -ms-border-radius: 8px !important;
     -o-border-radius: 8px !important;
+    box-shadow: none !important;
 }
 
 #timer .MuiBox-root.css-1ckq4ov {
@@ -20,6 +21,11 @@
     -moz-border-radius: 8px !important;
     -ms-border-radius: 8px !important;
     -o-border-radius: 8px !important;
+    box-shadow: none !important;
+}
+
+#timer .MuiBox-root.css-1av4itb {
+    font-size: 10px;
 }
 
 #btn-popup {
