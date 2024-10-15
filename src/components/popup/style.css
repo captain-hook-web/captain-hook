@@ -1,0 +1,40 @@
+#timer>.MuiBox-root.css-n7zk5e {
+    margin: 0 !important;
+}
+
+#timer .MuiBox-root.css-12c5et2 {
+    border: 1px solid #FFBB00 !important;
+    height: 40px !important;
+    border-radius: 8px !important;
+    -webkit-border-radius: 8px !important;
+    -moz-border-radius: 8px !important;
+    -ms-border-radius: 8px !important;
+    -o-border-radius: 8px !important;
+}
+
+#timer .MuiBox-root.css-1ckq4ov {
+    border: 1px solid #FFBB00 !important;
+    height: 40px !important;
+    border-radius: 8px !important;
+    -webkit-border-radius: 8px !important;
+    -moz-border-radius: 8px !important;
+    -ms-border-radius: 8px !important;
+    -o-border-radius: 8px !important;
+}
+
+#btn-popup {
+    font-family: "Open Sans",
+        sans-serif;
+    font-weight: 900;
+}
+
+.list-popup {
+    font-family: "Open Sans",
+        sans-serif;
+    font-weight: 700;
+}
+
+.title-popup {
+    font-family: "Ribeye", serif;
+    font-weight: 900;
+}
