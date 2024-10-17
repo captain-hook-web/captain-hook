@@ -76,13 +76,11 @@ function HeaderDesktop({ onShow, onClosePopup }) {
                                             {DATA.HEADER_RIGHT.map(item => {
                                                 let styles;
                                                 if (item.text === "AUDIT") {
-                                                    styles = "bg-sunset-yellow w-[75px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
+                                                    styles = "bg-sunset-yellow w-[65px] sm:w-[75px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
                                                 } else if (item.text === "KYC") {
-                                                    styles = "bg-sunset-yellow w-[59px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
-                                                } else if (item.text === "Play") {
-                                                    styles = "hidden";
+                                                    styles = "bg-sunset-yellow w-[49px] sm:w-[59px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
                                                 } else {
-                                                    styles = "text-sunset-yellow";
+                                                    styles = "text-sunset-yellow text-sm sm:text-base";
                                                 }
                                                 return (
                                                     <li key={item.id} className={styles} >
@@ -102,8 +100,6 @@ function HeaderDesktop({ onShow, onClosePopup }) {
                                                 styles = "bg-sunset-yellow w-[75px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
                                             } else if (item.text === "KYC") {
                                                 styles = "bg-sunset-yellow w-[59px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
-                                            } else if (item.text === "Play") {
-                                                styles = "hidden";
                                             } else {
                                                 styles = "text-sunset-yellow";
                                             }

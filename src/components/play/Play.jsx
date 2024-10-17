@@ -30,8 +30,8 @@ function Play() {
                                 Set sail on an unforgettable fishing journey with Captain Hook, your gateway to a thrilling play-to-earn adventure on the Binance Smart Chain. Cast your line into a vibrant ocean teeming with opportunities, reel in diverse fish, and transform your catches into real rewards. As you dive deeper, enhance your ship and gear to boost your earning potential and efficiency. Whether you’re new to the play-to-earn scene or a seasoned player, Captain Hook offers a captivating and rewarding experience. Join the adventure and chart your course to becoming the ultimate sea captain!
                             </p>
                         </div>
-                        <div className="hidden justify-center -translate-y-[25px] lg:-translate-y-[55px]">
-                            <SmallButton src={Button} text={"Play now"} link={"#"} />
+                        <div className="flex justify-center -translate-y-[25px] lg:-translate-y-[55px]">
+                            <SmallButton src={Button} text={"Play now"} link={"https://game.captainhook.io/"} />
                         </div>
                     </div>
                 </div>

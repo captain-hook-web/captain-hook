@@ -66,8 +66,6 @@ function Footer() {
                                                 styles = "bg-sunset-yellow w-[75px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
                                             } else if (item.text === "KYC") {
                                                 styles = "bg-sunset-yellow w-[59px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
-                                            } else if (item.text === "Play") {
-                                                styles = "hidden";
                                             } else {
                                                 styles = "text-sunset-yellow";
                                             }
