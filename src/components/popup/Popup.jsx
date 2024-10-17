@@ -3,18 +3,7 @@ import CountDownTimer from "../SmallComponents/Timer";
 import "./style.css";
 import { useEffect, useState } from "react";
 
-function Popup({ onClosePopup }) {
-
-    const [popup, setPopup] = useState(false);
-
-    useEffect(() => {
-        setPopup(true)
-    }, [])
-
-    function handleClosePopup() {
-        setPopup(false);
-        onClosePopup(popup)
-    }
+function Popup({ onClosePopup, popup }) {
 
     return (
         <div className={`${popup ? "flex items-center justify-center w-full h-[100vh] bg-[#0b1023e6] fixed top-0 left-0 z-[1500]" : "hidden"}`}>
@@ -38,7 +27,7 @@ function Popup({ onClosePopup }) {
                 </ul>
                 <p className="w-[85%] mx-auto open-sans-Medium text-white text-[12px] mt-2">Don’t miss this revolutionary opportunity! Join the VIP Club now and be part of the Captain Hook journey!</p>
                 <div className="flex justify-center my-5">
-                    <button onClick={handleClosePopup} id="btn-popup" className="open-sans-Medium font-black text-lgg text-white bg-purple py-2 px-10 rounded-xl border-[1.5px] border-white transition-[1s] hover:-translate-y-1">OK</button>
+                    <button onClick={onClosePopup} id="btn-popup" className="open-sans-Medium font-black text-lgg text-white bg-purple py-2 px-10 rounded-xl border-[1.5px] border-white transition-[1s] hover:-translate-y-1">OK</button>
                 </div>
             </div>
         </div>

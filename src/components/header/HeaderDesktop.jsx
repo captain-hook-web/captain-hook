@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 
 
-function HeaderDesktop({ onShow }) {
+function HeaderDesktop({ onShow, onClosePopup }) {
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
@@ -50,7 +50,7 @@ function HeaderDesktop({ onShow }) {
                                                 )
                                             } else if (item.text === "VIP Club") {
                                                 return (
-                                                    <li key={item.id} className="cursor-pointer text-sunset-yellow" >{item.text}</li>
+                                                    <li onClick={onClosePopup} key={item.id} className="cursor-pointer text-sunset-yellow" >{item.text}</li>
                                                 )
                                             } else {
                                                 return (

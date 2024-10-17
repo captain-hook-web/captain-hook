@@ -180,10 +180,10 @@ function HeroSection() {
     {
       title: "Next Price",
       price: "0.006",
-        // `$${Number(nextStageTokenPrice) > 0
-        //   ? parseFloat(1 / Number(nextStageTokenPrice))?.toFixed(4)
-        //   : "0.00"
-        // }`,
+      // `$${Number(nextStageTokenPrice) > 0
+      //   ? parseFloat(1 / Number(nextStageTokenPrice))?.toFixed(4)
+      //   : "0.00"
+      // }`,
       selected: false,
     },
   ];

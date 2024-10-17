@@ -2,7 +2,7 @@ import Logo from "/Captain-Hook-Logo.png";
 import DATA from "../../../data/data";
 import { Link } from "react-scroll";
 
-function HambergerMenu({ onClose, isClose }) {
+function HambergerMenu({ onClose, isClose, onClosePopup }) {
     return (
         <div className={`hamberger-menu w-full h-[100vh] bg-[#0b1023e6] fixed top-0 left-0 z-[1050] p-5 ${isClose && `left-[-100%]`}`}>
             <div className="flex items-center justify-between">
@@ -32,7 +32,7 @@ function HambergerMenu({ onClose, isClose }) {
                         )
                     } else if (item.text === "VIP Club") {
                         return (
-                            <li key={item.id} className="cursor-pointer text-sunset-yellow" >{item.text}</li>
+                            <li onClick={onClosePopup} key={item.id} className="cursor-pointer text-sunset-yellow" >{item.text}</li>
                         )
                     } else {
                         return (
