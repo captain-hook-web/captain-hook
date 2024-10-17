@@ -862,7 +862,7 @@ function HeroSection() {
                             fontSize: "13px",
                             fontWeight: 600,
                             lineHeight: "17.7px",
-                            color: "#FFFFFF",
+                            color: "#70DF00",
                           }}
                         >
                           DEX Launch Price
@@ -873,7 +873,7 @@ function HeroSection() {
                             fontSize: "14px",
                             fontWeight: 600,
                             lineHeight: "19.07px",
-                            color: "#FFFFFF",
+                            color: "#70DF00",
                           }}
                         >
                           $0.01
@@ -884,9 +884,9 @@ function HeroSection() {
                             color: "#70DF00",
                           }}
                         >
-                          <Box mt={-0.2}>
+                          {/* <Box mt={-0.2}>
                             <ArrowDropUpIcon />
-                          </Box>
+                          </Box> */}
 
                           <Typography
                             sx={{
@@ -897,7 +897,7 @@ function HeroSection() {
                               textAlign: "left",
                             }}
                           >
-                            (
+                            {/* (
                             {calculatePercentageDifference(
                               Number(currentStageTokenPrice) > 0
                                 ? parseFloat(
@@ -910,7 +910,7 @@ function HeroSection() {
                                 )?.toFixed(4)
                                 : 0
                             )}
-                            %)
+                            %) */}
                           </Typography>
                         </Box>
                       </Stack>

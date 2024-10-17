@@ -79,35 +79,57 @@ function HeaderDesktop({ onShow, onClosePopup }) {
                                                     styles = "bg-sunset-yellow w-[65px] sm:w-[75px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
                                                 } else if (item.text === "KYC") {
                                                     styles = "bg-sunset-yellow w-[49px] sm:w-[59px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
+                                                } else if (item.text === "Play") {
+                                                    styles = "hidden"
                                                 } else {
                                                     styles = "text-sunset-yellow text-sm sm:text-base";
                                                 }
-                                                return (
-                                                    <li key={item.id} className={styles} >
-                                                        <a href={item.link} className="block w-full h-full text-center">{item.text}</a>
-                                                    </li>
-                                                )
+
+                                                if (item.subtile) {
+                                                    return (
+                                                        <li key={item.id} className={styles} >
+                                                            <a href={item.link} className="block w-full h-full text-center">{item.text} <span className="text-xs text-[#fe375b]">{item.subtile}</span></a>
+                                                        </li>
+                                                    )
+                                                } else {
+                                                    return (
+                                                        <li key={item.id} className={styles} >
+                                                            <a href={item.link} className="block w-full h-full text-center">{item.text}</a>
+                                                        </li>
+                                                    )
+                                                }
+
                                             })}
                                         </ul>
                                         <figure className="h-[55px] w-[55px]">
                                             <img src={Logo} alt="Capitan Hook" loading="lazy" className="h-[55px] w-[55px]" />
                                         </figure>
                                     </div>
-                                    <ul className="hidden h-full xl:flex items-center justify-end space-x-6 open-sans-Medium text-base">
+                                    <ul className="hidden h-full xl:flex items-center justify-end space-x-3 open-sans-Medium text-base">
                                         {DATA.HEADER_RIGHT.map(item => {
                                             let styles;
                                             if (item.text === "AUDIT") {
-                                                styles = "bg-sunset-yellow w-[75px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
+                                                styles = "bg-sunset-yellow w-[65px] sm:w-[75px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
                                             } else if (item.text === "KYC") {
-                                                styles = "bg-sunset-yellow w-[59px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
+                                                styles = "bg-sunset-yellow w-[49px] sm:w-[59px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
                                             } else {
-                                                styles = "text-sunset-yellow";
+                                                styles = "text-sunset-yellow text-sm sm:text-base";
                                             }
-                                            return (
-                                                <li key={item.id} className={styles} >
-                                                    <a href={item.link} className="block w-full h-full text-center">{item.text}</a>
-                                                </li>
-                                            )
+
+                                            if (item.subtile) {
+                                                return (
+                                                    <li key={item.id} className={styles} >
+                                                        <a href={item.link} className="block w-full h-full text-center">{item.text} <span className="text-xs text-[#fe375b]">{item.subtile}</span></a>
+                                                    </li>
+                                                )
+                                            } else {
+                                                return (
+                                                    <li key={item.id} className={styles} >
+                                                        <a href={item.link} className="block w-full h-full text-center">{item.text}</a>
+                                                    </li>
+                                                )
+                                            }
+
                                         })}
                                     </ul>
                                     <ul className="hidden xl:flex items-center space-x-6 border-l-[1px] border-storm-gray pl-6">
