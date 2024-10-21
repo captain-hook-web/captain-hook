@@ -96,7 +96,9 @@ const calculatePercentageDifference = (firstPrice, nextPrice) => {
   return Number(parseFloat(percentageDifference).toFixed(0));
 };
 
+
 function HeroSection() {
+
   const { open } = useWeb3Modal();
   const { account } = useContext(AppContext);
   const matches = useMediaQuery("(max-width:1570px)");
@@ -159,7 +161,7 @@ function HeroSection() {
   const raisedDetails = [
     {
       title: "Total USDT Raised:",
-      spend: overAllRaised?.sale ,
+      spend: overAllRaised?.sale,
       total: overAllRaised?.total,
     },
     {
@@ -172,18 +174,17 @@ function HeroSection() {
     {
       title: "Current Price",
       price: `$${Number(currentStageTokenPrice) > 0
-        ? parseFloat(1 / Number(currentStageTokenPrice))?.toFixed(4)
-        : "0.00"
+          ? parseFloat(1 / Number(currentStageTokenPrice))?.toFixed(4)
+          : "0.00"
         }`,
       selected: true,
     },
     {
       title: "Next Price",
-      price: "0.006",
-      // `$${Number(nextStageTokenPrice) > 0
-      //   ? parseFloat(1 / Number(nextStageTokenPrice))?.toFixed(4)
-      //   : "0.00"
-      // }`,
+      price: `$${Number(nextStageTokenPrice) > 0
+          ? parseFloat(1 / Number(nextStageTokenPrice))?.toFixed(4)
+          : "0.00"
+        }`,
       selected: false,
     },
   ];
@@ -194,7 +195,7 @@ function HeroSection() {
 
   const handleCopyClick = () => {
     try {
-      navigator.clipboard.writeText("0xe90895B3f0EdFF3DFa7A4281B55C914a2D2166c6");
+      navigator.clipboard.writeText(presaleAddress);
       showAlert("Address copied", "success");
     } catch (e) {
       console.log(e);
@@ -260,17 +261,17 @@ function HeroSection() {
 
       const totalStages = Number(totalStagesRaw?.toString());
 
-      let totalSoldToken = 0;
+      let totalSoldToken = 6800000;
       let totalTokenToSell = 0;
+      let currentStageSoldToken = 6800000;
       let currentStageTokenSell = 0;
-      let currentStageSoldToken = 0;
 
       for (let i = 0; i < totalStages; i++) {
         const { soldTokens, tokensToSell } = await fetchStageData(i);
 
         if (i === currentStage) {
-          currentStageTokenSell = tokensToSell;
-          currentStageSoldToken = soldTokens;
+          currentStageTokenSell += tokensToSell;
+          currentStageSoldToken += soldTokens;
         }
 
         totalTokenToSell += tokensToSell;
@@ -593,7 +594,7 @@ function HeroSection() {
                     alignItems: "center",
                   }}
                 >
-                  <CountDownTimer time={1729533747} />
+                  <CountDownTimer time={1729617747} />
                 </Stack>
                 <Box
                   mt={2}

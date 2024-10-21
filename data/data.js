@@ -33,12 +33,12 @@ const DATA = {
         { id: 15, text: "Presale Is Live", link: "#" },
     ],
     STAG: [
-        { id: 1, title: "Stage 1", price: "$0.005", goal: "$50,400", start: "6th October 2024" },
-        { id: 2, title: "Stage 2", price: "$0.006", goal: "$50,400", start: "21st October 2024" },
-        { id: 3, title: "Stage 3", price: "$0.007", goal: "$50,400", start: "5th November 2024" },
-        { id: 4, title: "Stage 4", price: "$0.008", goal: "$50,400", start: "20th November 2024" },
-        { id: 5, title: "Stage 5", price: "$0.009", goal: "$50,400", start: "5th December 2024" },
-        { id: 6, title: "DEX Launch", price: "$0.01", start: "25th December 2024" },
+        { id: 1, title: "Stage 1", price: "$0.005", goal: "$50,400", start: "7th October 2024" },
+        { id: 2, title: "Stage 2", price: "$0.006", goal: "$50,400", start: "22st October 2024" },
+        { id: 3, title: "Stage 3", price: "$0.007", goal: "$50,400", start: "6th November 2024" },
+        { id: 4, title: "Stage 4", price: "$0.008", goal: "$50,400", start: "21th November 2024" },
+        { id: 5, title: "Stage 5", price: "$0.009", goal: "$50,400", start: "6th December 2024" },
+        { id: 6, title: "DEX Launch", price: "$0.01", start: "26th December 2024" },
     ],
     ROADMAP: [
         {
