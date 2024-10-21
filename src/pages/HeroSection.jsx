@@ -159,7 +159,7 @@ function HeroSection() {
   const raisedDetails = [
     {
       title: "Total USDT Raised:",
-      spend: overAllRaised?.sale,
+      spend: overAllRaised?.sale ,
       total: overAllRaised?.total,
     },
     {
@@ -593,7 +593,7 @@ function HeroSection() {
                     alignItems: "center",
                   }}
                 >
-                  <CountDownTimer time={1729497747} />
+                  <CountDownTimer time={1729533747} />
                 </Stack>
                 <Box
                   mt={2}
