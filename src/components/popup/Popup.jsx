@@ -13,7 +13,7 @@ function Popup({ onClosePopup, popup }) {
                 <p className="w-[70%] mx-auto open-sans-Medium text-white text-center text-[12px] my-2">For the FIRST TIME EVER, we're excited to launch our VIP Club for early participants!</p>
                 <div className="w-[98%] mx-auto bg-[#00000060] py-2">
                     <div id="timer" className="w-[70%] mx-auto">
-                        <CountDownTimer time={1729617747} />
+                        <CountDownTimer time={1729631906} />
                     </div>
                 </div>
                 <h4 className="title-popup w-[85%] mx-auto text-white text-[15px] my-2">VIP Benefits:</h4>

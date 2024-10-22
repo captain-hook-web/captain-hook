@@ -594,7 +594,7 @@ function HeroSection() {
                     alignItems: "center",
                   }}
                 >
-                  <CountDownTimer time={1729617747} />
+                  <CountDownTimer time={1729631906} />
                 </Stack>
                 <Box
                   mt={2}
