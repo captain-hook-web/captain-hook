@@ -195,7 +195,7 @@ function HeroSection() {
 
   const handleCopyClick = () => {
     try {
-      navigator.clipboard.writeText(presaleAddress);
+      navigator.clipboard.writeText(tokenAddress);
       showAlert("Address copied", "success");
     } catch (e) {
       console.log(e);
