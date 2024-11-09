@@ -13,7 +13,7 @@ const DATA = {
         { id: 1, text: "AUDIT", link: "https://app.solidproof.io/projects/captain-hook" },
         { id: 2, text: "KYC", link: "https://github.com/solidproof/Projects/blob/main/2024/Captain%20Hook/KYC_Certificate_SolidProof_Captain_Hook.jpg" },
         { id: 3, text: "Whitepaper", link: "https://captain-hook.gitbook.io/white-paper" },
-        { id: 4, text: "Play", subtile: "(Beta V)", link: "https://game.captainhook.io/" },
+        // { id: 4, text: "Play", subtile: "(Beta V)", link: "https://game.captainhook.io/" },
     ],
     PRESALESLIDER: [
         { id: 1, text: "Presale Is Live", link: "#" },
@@ -33,13 +33,21 @@ const DATA = {
         { id: 15, text: "Presale Is Live", link: "#" },
     ],
     STAG: [
-        { id: 1, title: "Stage 1", price: "$0.005", goal: "$50,400", start: "7th October 2024" },
-        { id: 2, title: "Stage 2", price: "$0.006", goal: "$50,400", start: "22st October 2024" },
-        { id: 3, title: "Stage 3", price: "$0.007", goal: "$50,400", start: "6th November 2024" },
-        { id: 4, title: "Stage 4", price: "$0.008", goal: "$50,400", start: "21th November 2024" },
-        { id: 5, title: "Stage 5", price: "$0.009", goal: "$50,400", start: "6th December 2024" },
-        { id: 6, title: "DEX Launch", price: "$0.01", start: "26th December 2024" },
+        { id: 1, title: "Stage 1", price: "$0.005", goal: "$50,400" },
+        { id: 2, title: "Stage 2", price: "$0.006", goal: "$50,400" },
+        { id: 3, title: "Stage 3", price: "$0.007", goal: "$50,400" },
+        { id: 4, title: "Stage 4", price: "$0.008", goal: "$50,400" },
+        { id: 5, title: "Stage 5", price: "$0.009", goal: "$50,400" },
+        { id: 6, title: "DEX Launch", price: "$0.01" },
     ],
+    // STAG: [
+    //     { id: 1, title: "Stage 1", price: "$0.005", goal: "$50,400", start: "7th October 2024" },
+    //     { id: 2, title: "Stage 2", price: "$0.006", goal: "$50,400", start: "22st October 2024" },
+    //     { id: 3, title: "Stage 3", price: "$0.007", goal: "$50,400", start: "6th November 2024" },
+    //     { id: 4, title: "Stage 4", price: "$0.008", goal: "$50,400", start: "21th November 2024" },
+    //     { id: 5, title: "Stage 5", price: "$0.009", goal: "$50,400", start: "6th December 2024" },
+    //     { id: 6, title: "DEX Launch", price: "$0.01", start: "26th December 2024" },
+    // ],
     ROADMAP: [
         {
             id: 1,

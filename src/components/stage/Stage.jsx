@@ -25,9 +25,9 @@ function Stage() {
                             )}
                         </div>
                         <span className="open-sans-Medium text-smoky-gray text-lg">
-                            <span className="font-bold">
+                            {/* <span className="font-bold">
                                 start
-                            </span>
+                            </span> */}
                         </span>
                         <span className="open-sans-Medium text-smoky-gray text-base">{item.start}</span>
                     </div>

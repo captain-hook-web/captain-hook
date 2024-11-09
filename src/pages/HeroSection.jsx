@@ -550,7 +550,7 @@ function HeroSection() {
                   width: { xs: "350px", md: "420px" },
                   borderRadius: "16px",
                   boxShadow: "0px 4px 20px 0px #16161629",
-                  bgcolor: "#04263680",
+                  bgcolor: "#042636ba",
                   px: 2,
                   pb: 2,
                 }}
@@ -583,7 +583,8 @@ function HeroSection() {
                         textAlign: "center",
                       }}
                     >
-                      PHASE {currentStage + 1} OF 5 ENDS IN
+                      PHASE {currentStage + 1} OF 5 
+                      {/* ENDS IN */}
                     </Typography>
                   </Box>
                 </Box>
@@ -594,9 +595,9 @@ function HeroSection() {
                     alignItems: "center",
                   }}
                 >
-                  <CountDownTimer time={1730937540} />
+                  {/* <CountDownTimer time={1730937540} /> */}
                 </Stack>
-                <Box
+                {/* <Box
                   mt={2}
                   sx={{
                     border: "1px solid #FFAE02",
@@ -631,7 +632,7 @@ function HeroSection() {
                     deviation, not even by a single day. In this, there are no
                     excuses.
                   </Typography>
-                </Box>
+                </Box> */}
                 <Box
                   mt={1}
                   py={1}
@@ -656,8 +657,8 @@ function HeroSection() {
                           mr={1}
                           sx={{
                             fontFamily: "Open Sans",
-                            fontSize: "13px",
-                            fontWeight: 400,
+                            fontSize: "18px",
+                            fontWeight: 600,
                             lineHeight: "17.7px",
                             textAlign: "center",
                             color: " #FFFFFF",
@@ -670,7 +671,7 @@ function HeroSection() {
                           mr={0.4}
                           sx={{
                             fontFamily: "Open Sans",
-                            fontSize: "13px",
+                            fontSize: "18px",
                             fontWeight: 600,
                             lineHeight: "17.7px",
                             textAlign: "center",
@@ -683,8 +684,8 @@ function HeroSection() {
                           variant="body2"
                           sx={{
                             fontFamily: "Open Sans",
-                            fontSize: "13px",
-                            fontWeight: 400,
+                            fontSize: "18px",
+                            fontWeight: 600,
                             lineHeight: "17.7px",
                             textAlign: "center",
                             color: "#AEB9BC",
