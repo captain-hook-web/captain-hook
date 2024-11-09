@@ -174,16 +174,16 @@ function HeroSection() {
     {
       title: "Current Price",
       price: `$${Number(currentStageTokenPrice) > 0
-          ? parseFloat(1 / Number(currentStageTokenPrice))?.toFixed(4)
-          : "0.00"
+        ? parseFloat(1 / Number(currentStageTokenPrice))?.toFixed(4)
+        : "0.00"
         }`,
       selected: true,
     },
     {
       title: "Next Price",
       price: `$${Number(nextStageTokenPrice) > 0
-          ? parseFloat(1 / Number(nextStageTokenPrice))?.toFixed(4)
-          : "0.00"
+        ? parseFloat(1 / Number(nextStageTokenPrice))?.toFixed(4)
+        : "0.00"
         }`,
       selected: false,
     },
@@ -583,7 +583,7 @@ function HeroSection() {
                         textAlign: "center",
                       }}
                     >
-                      PHASE {currentStage + 1} OF 5 
+                      PHASE {currentStage + 1} OF 5
                       {/* ENDS IN */}
                     </Typography>
                   </Box>
@@ -661,7 +661,8 @@ function HeroSection() {
                             fontWeight: 600,
                             lineHeight: "17.7px",
                             textAlign: "center",
-                            color: " #FFFFFF",
+                            color: "#FFFFFF",
+                            marginTop: "10px"
                           }}
                         >
                           {title}
@@ -676,6 +677,7 @@ function HeroSection() {
                             lineHeight: "17.7px",
                             textAlign: "center",
                             color: " #FFFFFF",
+                             marginTop: "10px"
                           }}
                         >
                           ${spend}
@@ -689,6 +691,7 @@ function HeroSection() {
                             lineHeight: "17.7px",
                             textAlign: "center",
                             color: "#AEB9BC",
+                             marginTop: "10px"
                           }}
                         >
                           /${total}
