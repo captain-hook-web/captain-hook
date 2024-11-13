@@ -34,20 +34,20 @@
 
 @media (min-width: 1280px) {
     .MuiBox-root.css-1rm7u2e {
-        transform: scale(.8) translateX(40px) translateY(150px);
-        -webkit-transform: scale(.8) translateX(40px) translateY(150px);
-        -moz-transform: scale(.8) translateX(40px) translateY(150px);
-        -ms-transform: scale(.8) translateX(40px) translateY(150px);
-        -o-transform: scale(.8) translateX(40px) translateY(150px);
+        transform: scale(.8) translateX(40px) translateY(300px);
+        -webkit-transform: scale(.8) translateX(40px) translateY(300px);
+        -moz-transform: scale(.8) translateX(40px) translateY(300px);
+        -ms-transform: scale(.8) translateX(40px) translateY(300px);
+        -o-transform: scale(.8) translateX(40px) translateY(300px);
     }
 }
 
 @media (min-width: 1800px) {
     .MuiBox-root.css-1rm7u2e {
-        transform: scale(1) translateX(0) translateY(200px);
-        -webkit-transform: scale(1) translateX(0) translateY(200px);
-        -moz-transform: scale(1) translateX(0) translateY(200px);
-        -ms-transform: scale(1) translateX(0) translateY(200px);
-        -o-transform: scale(1) translateX(0) translateY(200px);
+        transform: scale(1) translateX(0) translateY(300px);
+        -webkit-transform: scale(1) translateX(0) translateY(300px);
+        -moz-transform: scale(1) translateX(0) translateY(300px);
+        -ms-transform: scale(1) translateX(0) translateY(300px);
+        -o-transform: scale(1) translateX(0) translateY(300px);
     }
 }

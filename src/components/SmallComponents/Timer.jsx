@@ -48,18 +48,17 @@ export default function CountDownTimer({ time }) {
     backgroundColor: `#FFFFFF14`,
     boxShadow: "0px 14.171783447265625px 38.97240447998047px 0px #000000CC",
     color: "#ffffff",
-    fontSize: matches ? "24px" : "24px",
+    fontSize: matches ? "34px" : "34px",
     textAlign: "center",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: matches ? "61px" : "49px",
-    width: matches ? "60px" : "49px",
+    height: matches ? "60px" : "60px",
+    width: matches ? "60px" : "60px",
     letterSpacing: 2,
     fontFamily: "Inter",
     fontWeight: "600",
     p: matches ? 0.4 : 0.4,
-
     borderRadius: "12px",
   };
 

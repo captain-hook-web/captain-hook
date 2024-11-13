@@ -13,7 +13,7 @@ import BalloonLeft from "/balloon-left.png";
 import BalloonRight from "/balloon-right.png";
 import Capitan from "/capitan-hook.png";
 import Capitan2 from "/capitan-hook-2.png";
-// import Presale from "/presale.png";
+import Presale from "/presale.png";
 import Container from "../container/Container";
 import HeroSection from "../../pages/HeroSection"
 
@@ -93,16 +93,16 @@ function ParallaxSection() {
                     </p>
                 </div>
             </div>
-            {/* <div className="w-full bg-navy-blue xl:bg-transparent pb-20 xl:p-0">
+            <div className="w-full bg-navy-blue xl:bg-transparent pb-20 xl:p-0">
                 <div className="w-full relative xl:absolute xl:top-0 xl:left-0 xl:before:content-none before:content-[''] before:absolute before:top-[-50px] before:left-0 before:w-full before:h-[50px] before:bg-linear-gradient">
                     <Container>
                         <div className="flex justify-center xl:justify-end">
-                           <img src={Presale} alt="presale" loading="lazy" className="xl:scale-[.9] xxl:scale-[1] xl:translate-x-[40px] xxl:translate-x-[25px] xl:mt-[80px] xxl:mt-[200px]" /> 
+                           {/* <img src={Presale} alt="presale" loading="lazy" className="xl:scale-[.9] xxl:scale-[1] xl:translate-x-[40px] xxl:translate-x-[25px] xl:mt-[80px] xxl:mt-[200px]" />  */}
                             <HeroSection/>
                         </div>
                     </Container>
                 </div>
-            </div>*/}
+            </div>
         </section>
     );
 }

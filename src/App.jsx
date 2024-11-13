@@ -34,7 +34,7 @@ function App() {
 
   return (
     <main className="w-full max-w-[1920px] mx-auto overflow-hidden">
-      <Popup />
+      {/* <Popup /> */}
       <Header />
       <Parallax />
       <RailSlider
@@ -49,7 +49,7 @@ function App() {
       />
       <Presale />
       <Capt />
-      <Roadmap />
+      {/* <Roadmap /> */}
       <Team />
       <Faq />
       <Footer />
