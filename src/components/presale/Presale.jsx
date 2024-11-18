@@ -17,7 +17,7 @@ function Presale() {
                     <Container>
                         <div className="w-full max-w-[850px] mx-auto p-5 mb-5 rounded-[12px] bg-[#ffffff1c]">
                             <p className="open-sans-Medium text-white text-lg text-center mb-3">
-                                The presale accounts for 3.76% of the total supply and is divided into 5 phases, with the token price varying in each phase.
+                                The presale accounts for 3.76% of the total supply and is divided into 3 phases, with the token price varying in each phase.
                             </p>
                             <p className="open-sans-Medium text-light-red text-lg text-center">
                                 Our plan is precise. We stick to our schedule without deviation, not even by a single day.
@@ -26,7 +26,7 @@ function Presale() {
                         <div className="flex justify-center">
                             <BigButton text={"Buy $CAPT Now"} link={"#"} />
                         </div>
-                        <div className="grid grid-cols-2 lg:grid-cols-6 gap-5 2xl:gap-10 mt-5 2xl:mt-20 translate-y-[150px] lg:translate-y-[0px]">
+                        <div className="flex items-center flex-wrap justify-center gap-5 2xl:gap-10 mt-5 2xl:mt-20 translate-y-[150px] lg:translate-y-[0px]">
                             <Stage />
                         </div>
                     </Container>
