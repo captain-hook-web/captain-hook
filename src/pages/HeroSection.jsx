@@ -659,12 +659,14 @@ function HeroSection() {
                           mr={1}
                           sx={{
                             fontFamily: "Open Sans",
-                            fontSize: "18px",
+                            fontSize: {
+                              xs: "14px",
+                              md: "18px",
+                            },
                             fontWeight: 600,
                             lineHeight: "17.7px",
                             textAlign: "center",
                             color: "#FFFFFF",
-                            marginTop: "10px"
                           }}
                         >
                           {title}
@@ -674,12 +676,14 @@ function HeroSection() {
                           mr={0.4}
                           sx={{
                             fontFamily: "Open Sans",
-                            fontSize: "18px",
+                            fontSize: {
+                              xs: "14px",
+                              md: "18px",
+                            },
                             fontWeight: 600,
                             lineHeight: "17.7px",
                             textAlign: "center",
                             color: " #FFFFFF",
-                            marginTop: "10px"
                           }}
                         >
                           ${spend}
@@ -688,12 +692,14 @@ function HeroSection() {
                           variant="body2"
                           sx={{
                             fontFamily: "Open Sans",
-                            fontSize: "18px",
+                            fontSize: {
+                              xs: "14px",
+                              md: "18px",
+                            },
                             fontWeight: 600,
                             lineHeight: "17.7px",
                             textAlign: "center",
                             color: "#AEB9BC",
-                            marginTop: "10px"
                           }}
                         >
                           /${total}
@@ -1038,9 +1044,9 @@ function HeroSection() {
                               sx={{
                                 width:
                                   name === "BTC" || name === "MATIC"
-                                    ? { xs: "20px", sm: "30px" }
-                                    : { xs: "15px", sm: "20px" },
-                                height: { xs: "15px", sm: "20px" },
+                                    ? { xs: "25px" }
+                                    : { xs: "20px" },
+                                height: { xs: "20px" },
                               }}
                             />
                           }
@@ -1050,7 +1056,7 @@ function HeroSection() {
                             mt={0.2}
                             sx={{
                               fontFamily: "Open Sans",
-                              fontSize: { xs: "12px", sm: "14px" },
+                              fontSize: { xs: "12px", sm: "13px" },
                               fontWeight: 600,
                               lineHeight: "19.07px",
                               textAlign: "center",
