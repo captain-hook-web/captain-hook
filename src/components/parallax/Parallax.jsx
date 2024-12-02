@@ -11,7 +11,7 @@ import Chest from "/chest.png";
 import Shark from "/shark.png";
 import BalloonLeft from "/balloon-left.png";
 import BalloonRight from "/balloon-right.png";
-import Capitan from "/capitan-hook.png";
+import Capitan from "/capitan-hook.png"
 import Capitan2 from "/capitan-hook-2.png";
 import Presale from "/presale.png";
 import Container from "../container/Container";
@@ -83,7 +83,7 @@ function ParallaxSection() {
                     <img src={BalloonRight} alt="balloon" loading="lazy" className="balloon-right hidden xl:block w-[150px] 2xl:w-[180px] absolute z-[15] right-[250px] top-[200px]" />
                 </div>
                 <div className="w-full h-full">
-                    <img src={Capitan} alt="balloo" loading="lazy" className="md:hidden w-[300px] absolute z-[14] right-[calc(50%-150px)] bottom-[50px]" />
+                    <img src={Capitan} alt="balloo" loading="lazy" className="md:hidden w-[300px] absolute z-[14] right-[calc(50%-150px)] bottom-[80px]" />
                     <img src={Capitan2} alt="balloo" loading="lazy" className="hidden md:block w-[350px] lg:w-[400px] xl:w-[500px] 2xl:w-[600px] absolute z-[14] right-[calc(50%-175px)] lg:right-[calc(50%-200px)] xl:right-[calc(50%-250px)] 2xl:xl:right-[calc(50%-300px)] bottom-[80px] 2xl:bottom-[150px]" />
                 </div>
                 <div className="w-full h-full">
