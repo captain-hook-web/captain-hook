@@ -64,7 +64,7 @@ function App() {
       <Capt />
       <Roadmap />
       <Team />
-      <Faq />
+      {/* <Faq /> */}
       <Footer />
     </main>
   );

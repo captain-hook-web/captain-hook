@@ -5,7 +5,7 @@ const DATA = {
         { id: 3, text: "$CAPT Token" },
         { id: 4, text: "Roadmap" },
         { id: 5, text: "Team" },
-        { id: 6, text: "FAQ" },
+        // { id: 6, text: "FAQ" },
         { id: 7, text: "Giveaway" },
         // { id: 8, text: "VIP Club" },
     ],
