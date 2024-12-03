@@ -586,7 +586,7 @@ function HeroSection() {
                       }}
                     >
                       {/* PHASE {currentStage + 1} OF 3 */}
-                      Presale Starts In
+                      Presale Ends In
                     </Typography>
                   </Box>
                 </Box>
@@ -597,7 +597,7 @@ function HeroSection() {
                     alignItems: "center",
                   }}
                 >
-                  <CountDownTimer time={1733220000} />
+                  <CountDownTimer time={1733446740} />
                 </Stack>
                 {<Box
                   mt={2}
