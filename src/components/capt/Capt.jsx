@@ -32,7 +32,7 @@ function Capt() {
                             </p>
                         </div>
                         <div className="flex justify-center">
-                            <BigButton text={"Buy $CAPT Now"} link={"https://www.pinksale.finance/launchpad/bsc/0x132969683f9A983374113a7d42832716F914477e"} />
+                            <BigButton text={"Buy $CAPT Now"} link={"#"} />
                         </div>
                     </Container>
                 </div>

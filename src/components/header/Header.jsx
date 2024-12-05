@@ -25,7 +25,7 @@ function Header() {
         <>
             <HeaderDesktop onShow={handleHideAndShowMenu} onClosePopup={handleClosePopup} />
             <HambergerMenu onClose={handleHideAndShowMenu} onClosePopup={handleClosePopup} isClose={close} />
-            {/* <Popup onClosePopup={handleClosePopup} popup={popup} /> */}
+            <Popup onClosePopup={handleClosePopup} popup={popup} />
         </>
     );
 }

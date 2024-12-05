@@ -579,14 +579,14 @@ function HeroSection() {
                       variant="body2"
                       sx={{
                         fontFamily: "Open Sans",
-                        fontSize: "18px",
+                        fontSize: "14px",
                         fontWeight: 600,
                         lineHeight: "19.07px",
                         textAlign: "center",
                       }}
                     >
-                      {/* PHASE {currentStage + 1} OF 3 */}
-                      Presale Ends In
+                      PHASE {currentStage + 1} OF 3
+                      {/* ENDS IN */}
                     </Typography>
                   </Box>
                 </Box>
@@ -597,7 +597,7 @@ function HeroSection() {
                     alignItems: "center",
                   }}
                 >
-                  <CountDownTimer time={1733446740} />
+                  <CountDownTimer time={1733961540} />
                 </Stack>
                 {<Box
                   mt={2}
@@ -608,11 +608,7 @@ function HeroSection() {
                     padding: "8px",
                   }}
                 >
-                  <a href="https://www.pinksale.finance/launchpad/bsc/0x132969683f9A983374113a7d42832716F914477e">
-                    <img src="./pinksale.png" alt="pinksale" />
-                  </a>
-
-                  {/* <Typography
+                  <Typography
                     sx={{
                       fontFamily: "Open Sans",
                       fontSize: "14px",
@@ -637,8 +633,697 @@ function HeroSection() {
                     Our plan is precise. We stick to our schedule without
                     deviation, not even by a single day. In this, there are no
                     excuses.
-                  </Typography> */}
+                  </Typography>
                 </Box>}
+                <Box
+                  mt={1}
+                  py={1}
+                  sx={{
+                    bgcolor: " #16161680",
+                    borderRadius: "8px",
+                    padding: "8px, 12px, 8px, 12px",
+                  }}
+                >
+                  <Stack direction="column">
+                    {raisedDetails.map(({ title, spend, total }, item) => (
+                      <Stack
+                        mt={item === 1 ? 1 : 0}
+                        key={item + title}
+                        direction="row"
+                        sx={{
+                          justifyContent: "center",
+                        }}
+                      >
+                        <Typography
+                          variant="body2"
+                          mr={1}
+                          sx={{
+                            fontFamily: "Open Sans",
+                            fontSize: {
+                              xs: "14px",
+                              md: "18px",
+                            },
+                            fontWeight: 600,
+                            lineHeight: "17.7px",
+                            textAlign: "center",
+                            color: "#FFFFFF",
+                          }}
+                        >
+                          {title}
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          mr={0.4}
+                          sx={{
+                            fontFamily: "Open Sans",
+                            fontSize: {
+                              xs: "14px",
+                              md: "18px",
+                            },
+                            fontWeight: 600,
+                            lineHeight: "17.7px",
+                            textAlign: "center",
+                            color: " #FFFFFF",
+                          }}
+                        >
+                          ${spend}
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          sx={{
+                            fontFamily: "Open Sans",
+                            fontSize: {
+                              xs: "14px",
+                              md: "18px",
+                            },
+                            fontWeight: 600,
+                            lineHeight: "17.7px",
+                            textAlign: "center",
+                            color: "#AEB9BC",
+                          }}
+                        >
+                          /${total}
+                        </Typography>
+                      </Stack>
+                    ))}
+                    <Box
+                      my={1}
+                      mx={2.5}
+                      sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <Stack
+                        mt={1}
+                        sx={{
+                          height: { xs: "16px", md: "16px" },
+                          width: "100%",
+                          boxShadow:
+                            "5.091511249542236px 10.183022499084473px 15.274534225463867px 0px #00000080",
+                          background: "#FFFFFF",
+                          mt: 0.5,
+                          borderRadius: "20px",
+                          // border: "1px solid ",
+                          overflow: "hidden",
+                        }}
+                      >
+                        <Stack
+                          height={"100%"}
+                          alignItems={"start"}
+                          justifyContent={"center"}
+                          position={"relative"}
+                        >
+                          <Box
+                            sx={{
+                              position: "absolute",
+                              // boxShadow:
+                              //   "4.073208808898926px 4.073208808898926px 10.183022499084473px 0px #FFFFFFCC inset,0px 4.493834972381592px 9.986300468444824px 0px #A201274D",
+                              left: 0,
+                              top: 0,
+                              bottom: 0,
+                              width: `${progressBar}%`,
+                              // borderRadius: "20px",
+                              backgroundColor: "#00FF00",
+                              // backgroundImage: `url(${loadingMain})`,
+                              backgroundSize: "100% 100%",
+                              backgroundRepeat: "no-repeat",
+                              boxShadow: "0px 4px 4px 0px #00000040 inset",
+                              zIndex: 0,
+                              "&::after": {
+                                content: '""',
+                                display: "block",
+                                position: "absolute",
+                                top: 0,
+                                left: 0,
+                                height: "100%",
+                                width: "100%", // Wider than the container to allow animation
+                                backgroundImage:
+                                  "linear-gradient(135deg, transparent 25%, #16161666 25%,#16161666 50%, transparent 50%, transparent 75%, #16161666 75%, #16161666)",
+                                backgroundSize: "20px 20px", // Adjust the size for the stripes
+                                animation: "moveStripes 2s linear infinite",
+                              },
+                            }}
+                          />
+                        </Stack>
+                      </Stack>
+                    </Box>
+                  </Stack>
+                  <Box>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        mx: 2.5,
+                      }}
+                    >
+                      <Divider
+                        orientation="horizontal"
+                        sx={{
+                          backgroundColor: "#FFFFFF",
+                          height: "1px",
+                          width: "100%",
+
+                          opacity: 0.2,
+                        }}
+                      />
+                    </Box>
+                    <Box mt={1}>
+                      <Stack
+                        direction="row"
+                        px={2.5}
+                        sx={{
+                          justifyContent: "space-between",
+                          alignItems: "center",
+                        }}
+                      >
+                        {priceData.map(({ title, price, selected }, index) => (
+                          <Fragment key={index + title}>
+                            {index === 1 && (
+                              <Box mx={1}>
+                                <Box component="img" src={arrowIcon} />
+                              </Box>
+                            )}
+                            <Stack
+                              direction="column"
+                              gap={1}
+                              sx={{
+                                overflow: "hidden",
+                                justifyContent: "center",
+                                border: selected
+                                  ? "1px solid #FFAE02"
+                                  : "1px solid #FFFFFF",
+                                borderRadius: "8px",
+                                width: "150px",
+                                height: "63px",
+                              }}
+                            >
+                              <Box
+                                sx={{
+                                  backgroundColor: selected
+                                    ? "#FFAE021A"
+                                    : "#FFFFFF14",
+                                  padding: "6px 4px 4px 4px",
+                                  textAlign: "center",
+                                }}
+                              >
+                                <Typography
+                                  variant="body2"
+                                  sx={{
+                                    fontFamily: "Open Sans",
+                                    fontSize: "13px",
+                                    fontWeight: 400,
+                                    lineHeight: "21px",
+                                    textAlign: "center",
+                                    color: " #FFFFFF",
+                                  }}
+                                >
+                                  {title}
+                                </Typography>
+                              </Box>
+
+                              <Typography
+                                mb={1}
+                                variant="body2"
+                                sx={{
+                                  fontFamily: "Open Sans",
+                                  fontSize: "13px",
+                                  fontWeight: 600,
+                                  lineHeight: "10px",
+                                  textAlign: "center",
+                                  color: " #FFFFFF",
+                                }}
+                              >
+                                {price}
+                              </Typography>
+                            </Stack>
+                          </Fragment>
+                        ))}
+                      </Stack>
+                      <Stack
+                        direction="row"
+                        gap={1}
+                        sx={{
+                          justifyContent: "center",
+                          mt: 1,
+                        }}
+                      >
+                        <Typography
+                          sx={{
+                            fontFamily: "Open Sans",
+                            fontSize: "13px",
+                            fontWeight: 600,
+                            lineHeight: "17.7px",
+                            color: "#70DF00",
+                          }}
+                        >
+                          DEX Launch Price
+                        </Typography>
+                        <Typography
+                          sx={{
+                            fontFamily: "Open Sans",
+                            fontSize: "14px",
+                            fontWeight: 600,
+                            lineHeight: "19.07px",
+                            color: "#70DF00",
+                          }}
+                        >
+                          $0.01
+                        </Typography>
+                        <Typography
+                          sx={{
+                            fontFamily: "Open Sans",
+                            fontSize: "14px",
+                            fontWeight: 600,
+                            lineHeight: "19.07px",
+                            color: "#70DF00",
+                            marginLeft: "10px"
+                          }}>(+100%)</Typography>
+                        <Box
+                          sx={{
+                            display: "flex",
+                            color: "#70DF00",
+                          }}
+                        >
+                          {/* <Box mt={-0.2}>
+                            <ArrowDropUpIcon />
+                          </Box> */}
+
+                          <Typography
+                            sx={{
+                              fontFamily: "Open Sans",
+                              fontSize: "14px",
+                              fontWeight: 600,
+                              lineHeight: "19.07px",
+                              textAlign: "left",
+                            }}
+                          >
+                            {/* (
+                            {calculatePercentageDifference(
+                              Number(currentStageTokenPrice) > 0
+                                ? parseFloat(
+                                  1 / Number(currentStageTokenPrice)
+                                )?.toFixed(4)
+                                : 0,
+                              Number(nextStageTokenPrice) > 0
+                                ? parseFloat(
+                                  1 / Number(nextStageTokenPrice)
+                                )?.toFixed(4)
+                                : 0
+                            )}
+                            %) */}
+                          </Typography>
+                        </Box>
+                      </Stack>
+                    </Box>
+                  </Box>
+                </Box>
+                <Box
+                  mt={1}
+                  py={1}
+                  sx={{
+                    bgcolor: " #16161680",
+                    borderRadius: "8px",
+                    padding: "8px, 12px, 8px, 12px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      px: 2.5,
+                      display: "flex",
+                      // justifyContent: "space-between",
+                      alignItems: "center",
+                      textAlign: "center",
+                    }}
+                  >
+                    <Typography
+                      sx={{
+                        fontFamily: "Open Sans",
+                        fontSize: "14px",
+                        fontWeight: 700,
+                        lineHeight: "19.07px",
+
+                        color: "#FFFFFF",
+                      }}
+                    >
+                      Network:
+                    </Typography>
+
+                    <Stack
+                      sx={{
+                        flexDirection: "row",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        gap: 1,
+                        py: 0.2,
+                        width: { xs: "55%", sm: "60%" },
+                        height: "30px",
+                        borderRadius: "8px",
+                        border: "1px solid transparent",
+                        bgcolor: "transparent",
+                        color: "#FFFFFF",
+                      }}
+                    >
+                      <Box
+                        component={"img"}
+                        alt=""
+                        src={bnbIcon}
+                        sx={{
+                          width: "20px",
+                        }}
+                      />
+                      <Typography
+                        variant="body2"
+                        sx={{
+                          fontFamily: "Open Sans",
+                          fontSize: "14px",
+                          fontWeight: 600,
+                          lineHeight: "19.07px",
+                        }}
+                      >
+                        BSC (BEP-20)
+                      </Typography>
+                    </Stack>
+                  </Box>
+
+                  {buttonDetails?.map((val, index) => (
+                    <Stack
+                      key={Math.random() * index + index}
+                      mt={2}
+                      direction="row"
+                      gap={2}
+                      px={3.1}
+                      sx={{
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      {val?.map(({ name, value, icon }) => (
+                        <Button
+                          key={name}
+                          variant="contained"
+                          sx={{
+                            borderRadius: "8px",
+                            border:
+                              value == buyWith
+                                ? "1px solid #FFAE02"
+                                : "1px solid #FFFFFF",
+                            color: "#FFFFFF",
+
+                            bgcolor: "#333333",
+                            width: "100%",
+                            "&:hover": {
+                              backgroundColor: "#333333",
+                            },
+                          }}
+                          startIcon={
+                            <Box
+                              component="img"
+                              src={icon}
+                              sx={{
+                                width:
+                                  name === "BTC" || name === "MATIC"
+                                    ? { xs: "25px" }
+                                    : { xs: "20px" },
+                                height: { xs: "20px" },
+                              }}
+                            />
+                          }
+                          onClick={() => handleAmountButtonClick(value)}
+                        >
+                          <Typography
+                            mt={0.2}
+                            sx={{
+                              fontFamily: "Open Sans",
+                              fontSize: { xs: "12px", sm: "13px" },
+                              fontWeight: 600,
+                              lineHeight: "19.07px",
+                              textAlign: "center",
+                            }}
+                          >
+                            {name}
+                          </Typography>
+                        </Button>
+                      ))}
+                    </Stack>
+                  ))}
+                  <Box mt={1.5} px={3} marginTop={2}>
+                    <Stack
+                      direction="row"
+                      gap={2}
+                      sx={{
+                        justifyContent: "center",
+                      }}
+                    >
+                      <Stack direction="column" width={"50%"} gap={0.5}>
+                        <Typography
+                          sx={{
+                            fontFamily: "Open Sans",
+                            fontSize: "13px",
+                            fontWeight: 400,
+                            lineHeight: "17.7px",
+                            color: "#FFFFFF",
+                          }}
+                        >
+                          Pay with {buyWith}
+                        </Typography>
+                        <StyledInput
+                          type="text"
+                          placeholder="Amount"
+                          value={amount}
+                          onChange={handleInputChange}
+                          InputProps={{
+                            endAdornment: (
+                              <InputAdornment position="end">
+                                <Box>
+                                  <Box
+                                    sx={{
+                                      cursor: "pointer",
+                                    }}
+                                    onClick={() =>
+                                      handleMaxClick(userWalletBalance[buyWith])
+                                    }
+                                  >
+                                    <Typography
+                                      variant="body2"
+                                      sx={{
+                                        color: "black",
+                                        fontSize: "12px",
+                                        fontWeight: 500,
+                                      }}
+                                    >
+                                      MAX
+                                    </Typography>
+                                  </Box>
+                                </Box>
+                              </InputAdornment>
+                            ),
+                          }}
+                        />
+                      </Stack>
+                      <Stack
+                        direction="column"
+                        sx={{
+                          justifyContent: "center",
+                          width: "50%",
+                          gap: 0.5,
+                        }}
+                      >
+                        <Typography
+                          sx={{
+                            fontFamily: "Open Sans",
+                            fontSize: "13px",
+                            fontWeight: 400,
+                            lineHeight: "17.7px",
+                            color: "#FFFFFF",
+                          }}
+                        >
+                          Receive CAPT
+                        </Typography>
+                        <StyledInput
+                          type="text"
+                          placeholder="0"
+                          variant="outlined"
+                          value={amount > 0 ? recivedToken : "0"}
+                          sx={{
+                            width: "90%",
+                            height: "30px",
+                          }}
+                          InputProps={{
+                            readOnly: true,
+                          }}
+                        />
+                      </Stack>
+                    </Stack>
+                  </Box>
+                  <Stack
+                    mt={1}
+                    gap={1}
+                    direction="row"
+                    sx={{
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    <Typography
+                      sx={{
+                        fontFamily: "Open Sans",
+                        fontSize: "13px",
+                        fontWeight: 700,
+                        lineHeight: "17.7px",
+                        textAlign: "center",
+                        color: "#FF4242",
+                      }}
+                    >
+                      Maximum purchase amount
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontFamily: "Open Sans",
+                        fontSize: "14px",
+                        fontWeight: 600,
+                        lineHeight: "19.07px",
+                        textAlign: "center",
+                        color: "#FF4242",
+                      }}
+                    >
+                      $5,000
+                    </Typography>
+                  </Stack>
+                  <Box mt={1} pb={1} px={3}>
+                    <Button
+                      onClick={async () =>
+                        account ? buyHandler() : await open()
+                      }
+                      fullWidth
+                      sx={{
+                        fontFamily: "Open Sans",
+                        fontSize: "16px",
+                        fontWeight: 700,
+                        lineHeight: "21.07px",
+                        color: "#161616",
+                        textTransform: "capitalize",
+                        bgcolor: "#FFAE02",
+                        borderRadius: "8px",
+                        padding: "12px 16px 12px 16px",
+                        "&:hover": {
+                          backgroundColor: "#FFAE02",
+                        },
+                      }}
+                    >
+                      {account ? "Buy" : "Connect Wallet"}
+                    </Button>
+                  </Box>
+                </Box>
+                <Box
+                  mt={1}
+                  py={1}
+                  sx={{
+                    bgcolor: " #16161680",
+                    borderRadius: "8px",
+                    border: "1px solid #FFAE02",
+                    padding: "8px 12px 8px 12px",
+                  }}
+                >
+                  <Stack
+                    direction="row"
+                    sx={{
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Typography
+                      mr={1}
+                      sx={{
+                        fontFamily: "Open Sans",
+                        fontSize: "10px",
+                        fontWeight: 600,
+                        lineHeight: "13.62px",
+                        textAlign: "center",
+                        color: "#FFFFFF",
+                      }}
+                    >
+                      Contract Address
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontFamily: "Open Sans",
+                        fontSize: "10px",
+                        fontWeight: 600,
+                        lineHeight: "13.62px",
+                        textAlign: "center",
+                        color: "#FF4242",
+                      }}
+                    >
+                      (DO NOT PAY TO THIS ADDRESS)
+                    </Typography>
+                  </Stack>
+                  <Stack
+                    mt={1}
+                    direction="row"
+                    sx={{
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Typography
+                      mr={1}
+                      mt={1}
+                      sx={{
+                        fontFamily: "Open Sans",
+                        fontSize: "12px",
+                        fontWeight: 600,
+                        lineHeight: "16.62px",
+                        textAlign: "center",
+                        color: "#FFFFFF",
+                        width: "15%",
+                      }}
+                    >
+                      BSC
+                    </Typography>
+                    <Typography
+                      mr={2}
+                      mt={1}
+                      sx={{
+                        fontFamily: "Open Sans",
+                        fontSize: "12px",
+                        fontWeight: 600,
+                        lineHeight: "16.62px",
+                        textAlign: "center",
+                        color: "#FFFFFF",
+                        whiteSpace: "nowrap",
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                      }}
+                    >
+                      {/* {presaleAddress} */}
+                      0xe90895B3f0EdFF3DFa7A4281B55C914a2D2166c6
+                    </Typography>
+                    <Button
+                      sx={{
+                        color: "#161616",
+                        bgcolor: "#FFFFFF",
+                        borderRadius: "8px",
+                        width: "10%",
+                        "&:hover": {
+                          backgroundColor: "#FFFFFF",
+                        },
+                      }}
+                      onClick={handleCopyClick}
+                    >
+                      <Typography
+                        sx={{
+                          fontFamily: "Open Sans",
+                          fontSize: "12px",
+                          fontWeight: 600,
+                          lineHeight: "16.62px",
+                          textAlign: "center",
+                        }}
+                      >
+                        Copy
+                      </Typography>
+                    </Button>
+                  </Stack>
+                </Box>
               </Box>
             </Grid>
           </Grid>

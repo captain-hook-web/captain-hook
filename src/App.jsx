@@ -47,7 +47,7 @@ function App() {
 
   return (
     <main className="w-full max-w-[1920px] mx-auto overflow-hidden">
-      {/* <Popup /> */}
+      <Popup />
       <Header />
       <Parallax />
       <PRLogoSlider
@@ -64,7 +64,7 @@ function App() {
       <Capt />
       <Roadmap />
       <Team />
-      {/* <Faq /> */}
+      <Faq />
       <Footer />
     </main>
   );
