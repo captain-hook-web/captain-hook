@@ -48,6 +48,7 @@ import { useWeb3Modal } from "@web3modal/wagmi/react";
 import { AppContext } from "../utils/utils";
 import { getBalance } from "@wagmi/core";
 import { config } from "../utils/Web3ModalProvider";
+import Popup from "../components/popup/Popup";
 
 import "./style.css";
 
@@ -142,6 +143,8 @@ function HeroSection() {
     message: "",
     severity: undefined,
   });
+  const [isShowingPopup, setIsShowingPopup] = useState(false);
+  const [isShowingPopupNumber, setIsShowingPopupNumber] = useState(0);
   const showAlert = (message, severity = "error") => {
     setAlertState({
       open: true,
@@ -205,6 +208,10 @@ function HeroSection() {
   };
 
   const handleInputChange = (event) => {
+    if (isShowingPopupNumber === 0) {
+      setIsShowingPopup(true);
+      setIsShowingPopupNumber(prevState => prevState + 1);
+    }
     const input = event.target.value;
     const newValue = input?.replace(/[^0-9.]/g, "");
     setAmount(newValue);
@@ -449,8 +456,13 @@ function HeroSection() {
     }
   };
 
+  function handleShowAndHidePopup() {
+    setIsShowingPopup(false);
+  }
+
   return (
     <>
+      <Popup onClosePopup={handleShowAndHidePopup} popup={isShowingPopup} />
       <ToastNotify alertState={alertState} setAlertState={setAlertState} />
       <Loading loading={loading} />
       <Box
