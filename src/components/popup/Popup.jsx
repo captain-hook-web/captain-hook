@@ -9,7 +9,7 @@ function Popup({ onClosePopup, popup }) {
         <div className={`${popup ? "flex items-center justify-center w-full h-[100vh] bg-[#0b1023e6] fixed top-0 left-0 z-[1500]" : "hidden"}`}>
             <div className="relative bg-popup bg-no-repeat bg-[length:100%_100%] w-full max-w-[500px] h-auto pt-20 sm:pt-28 sm:pt-32  mt-10 scale-[.7] xl:scale-[1]">
                 <img src={Vip} alt="Vip Club" loading="lazy" className="w-[100%] absolute left-0 top-[-120px]" />
-                <h4 className="title-popup w-[85%] mx-auto text-white text-center text-[18px]">🎯 Exclusive Presale Stage 1 Offer: More Tokens, More Rewards! 🎯</h4>
+                <h4 className="title-popup w-[85%] mx-auto text-white text-center text-[18px]">🎯 Exclusive Presale Stage 2 Offer: More Tokens, More Rewards! 🎯</h4>
                 <p className="w-[80%] mx-auto open-sans-Medium text-white text-center text-[16px] my-2">🔹 Special rewards for Stage 1 presale investors:</p>
                 {/* <div className="w-[98%] mx-auto bg-[#00000060] py-2">
                     <div id="timer" className="w-[70%] mx-auto">
@@ -18,9 +18,9 @@ function Popup({ onClosePopup, popup }) {
                 </div> */}
                 <h4 className="open-sans-Medium w-[85%] mx-auto text-white text-[14px] my-2 text-center">The more you buy, the more bonus tokens you’ll receive in this early stage!</h4>
                 <ul className="list-popup w-[70%] mx-auto text-white text-[18px] my-5">
-                    <li><span>1.</span> <span className="text-lg">💰</span> Over $100: 20% bonus tokens</li>
-                    <li><span>2.</span> <span className="text-lg">💰</span> Over $200: 30% bonus tokens</li>
-                    <li><span>3.</span> <span className="text-lg">💰</span> Over $500: 60% bonus tokens</li>
+                    <li><span>1.</span> <span className="text-lg">💰</span> Over $100: 10% bonus tokens</li>
+                    <li><span>2.</span> <span className="text-lg">💰</span> Over $200: 20% bonus tokens</li>
+                    <li><span>3.</span> <span className="text-lg">💰</span> Over $500: 50% bonus tokens</li>
                     {/* <li><span>4.</span> <span className="text-lg">🗳️</span> Voice in Project Decisions!</li>
                     <li><span>5.</span> <span className="text-lg">📣</span> Early Access to News and Announcements!</li>
                     <li><span>6.</span> <span className="text-lg">🏅</span> Special Participation Badges!</li> */}
