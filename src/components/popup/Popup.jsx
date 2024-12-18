@@ -25,8 +25,8 @@ function Popup({ onClosePopup, popup }) {
                     <li><span>5.</span> <span className="text-lg">📣</span> Early Access to News and Announcements!</li>
                     <li><span>6.</span> <span className="text-lg">🏅</span> Special Participation Badges!</li> */}
                 </ul>
-                // <p className="w-[85%] mx-auto open-sans-Medium text-white text-[16px] mt-2 text-center">🌟 Stage 1 is your chance to invest early and earn maximum rewards!</p>
-                // <div className="flex justify-center my-5">
+                <p className="w-[85%] mx-auto open-sans-Medium text-white text-[16px] mt-2 text-center">🌟 Stage 2 is your chance to invest early and earn maximum rewards!</p>
+                <div className="flex justify-center my-5">
                     <button onClick={onClosePopup} id="btn-popup" className="open-sans-Medium font-black text-lgg text-white bg-purple py-2 px-10 rounded-xl border-[1.5px] border-white transition-[1s] hover:-translate-y-1">OK</button>
                 </div>
             </div>
