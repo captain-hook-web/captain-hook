@@ -17,7 +17,7 @@ function Presale() {
                     <Container>
                         <div className="w-full max-w-[850px] mx-auto p-5 mb-5 rounded-[12px] bg-[#ffffff1c]">
                             <p className="open-sans-Medium text-white text-lg text-center mb-3">
-                                The presale accounts for 3.76% of the total supply and is divided into 5 phases, with the token price varying in each phase.
+                                The presale accounts for 3.76% of the total supply and is divided into 3 phases, with the token price varying in each phase.
                             </p>
                             <p className="open-sans-Medium text-light-red text-lg text-center">
                                 Our plan is precise. We stick to our schedule without deviation, not even by a single day.
