@@ -911,7 +911,7 @@ function HeroSection() {
                             lineHeight: "19.07px",
                             color: "#70DF00",
                             marginLeft: "10px"
-                          }}>(+100%)</Typography>
+                          }}></Typography>
                         <Box
                           sx={{
                             display: "flex",
