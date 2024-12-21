@@ -270,9 +270,9 @@ function HeroSection() {
 
       const totalStages = Number(totalStagesRaw?.toString());
 
-      let totalSoldToken = 8165900;
+      let totalSoldToken = 1197000;
       let totalTokenToSell = 0;
-      let currentStageSoldToken = 4665900;
+      let currentStageSoldToken = 3570270;
       let currentStageTokenSell = 0;
 
       for (let i = 0; i < totalStages; i++) {
@@ -609,7 +609,7 @@ function HeroSection() {
                     alignItems: "center",
                   }}
                 >
-                  <CountDownTimer time={1734745742} />
+                  <CountDownTimer time={1735429742} />
                 </Stack>
                 {<Box
                   mt={2}
