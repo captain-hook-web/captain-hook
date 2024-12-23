@@ -184,12 +184,12 @@ function HeroSection() {
         }`,
       selected: true,
     },
-//    {
- //     title: "Next Price",
-  //    price: `$${Number(nextStageTokenPrice) > 0
-  //      ? parseFloat(1 / Number(nextStageTokenPrice))?.toFixed(4)
-   //     : "0.00"
-   //     }`,
+    {
+      title: "Next Price",
+      price: `$${Number(nextStageTokenPrice) > 0
+        ? parseFloat(1 / Number(nextStageTokenPrice))?.toFixed(4)
+        : "0.00"
+        }`,
       selected: false,
     },
   ];
