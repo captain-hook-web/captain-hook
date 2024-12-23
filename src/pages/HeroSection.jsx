@@ -184,12 +184,12 @@ function HeroSection() {
         }`,
       selected: true,
     },
-    {
-      title: "Next Price",
-      price: `$${Number(nextStageTokenPrice) > 0
-        ? parseFloat(1 / Number(nextStageTokenPrice))?.toFixed(4)
-        : "0.00"
-        }`,
+//    {
+ //     title: "Next Price",
+  //    price: `$${Number(nextStageTokenPrice) > 0
+  //      ? parseFloat(1 / Number(nextStageTokenPrice))?.toFixed(4)
+   //     : "0.00"
+   //     }`,
       selected: false,
     },
   ];
@@ -270,7 +270,7 @@ function HeroSection() {
 
       const totalStages = Number(totalStagesRaw?.toString());
 
-      let totalSoldToken = 12060225;
+      let totalSoldToken = 11760225;
       let totalTokenToSell = 0;
       let currentStageSoldToken = 4170270;
       let currentStageTokenSell = 0;
