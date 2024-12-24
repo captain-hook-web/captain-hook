@@ -912,16 +912,16 @@ function HeroSection() {
                             color: "#70DF00",
                             marginLeft: "10px"
                           }}></Typography> */}
-                        <Box
+{/*                         <Box
                           sx={{
                             display: "flex",
                             color: "#70DF00",
                           }}
-                        >
+                        > */}
                           {/* <Box mt={-0.2}>
                             <ArrowDropUpIcon />
                           </Box> */}
-
+{/* 
                           <Typography
                             sx={{
                               fontFamily: "Open Sans",
@@ -930,7 +930,7 @@ function HeroSection() {
                               lineHeight: "19.07px",
                               textAlign: "left",
                             }}
-                          >
+                          > */}
                             {/* (
                             {calculatePercentageDifference(
                               Number(currentStageTokenPrice) > 0
@@ -945,8 +945,8 @@ function HeroSection() {
                                 : 0
                             )}
                             %) */}
-                          </Typography>
-                        </Box>
+{/*                           </Typography>
+                        </Box> */}
                       </Stack>
                     </Box>
                   </Box>
