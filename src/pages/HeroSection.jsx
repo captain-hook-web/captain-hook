@@ -184,14 +184,14 @@ function HeroSection() {
         }`,
       selected: true,
     },
-    {
-      title: "Next Price",
-      price: `$${Number(nextStageTokenPrice) > 0
-        ? parseFloat(1 / Number(nextStageTokenPrice))?.toFixed(4)
-        : "0.00"
-        }`,
-      selected: false,
-    },
+    // {
+    //   title: "Next Price",
+    //   price: `$${Number(nextStageTokenPrice) > 0
+    //     ? parseFloat(1 / Number(nextStageTokenPrice))?.toFixed(4)
+    //     : "0.00"
+    //     }`,
+    //   selected: false,
+    // },
   ];
 
   const handleAmountButtonClick = (value) => {
@@ -812,11 +812,11 @@ function HeroSection() {
                       >
                         {priceData.map(({ title, price, selected }, index) => (
                           <Fragment key={index + title}>
-                            {index === 1 && (
+{/*                             {index === 1 && (
                               <Box mx={1}>
                                 <Box component="img" src={arrowIcon} />
                               </Box>
-                            )}
+                            )} */}
                             <Stack
                               direction="column"
                               gap={1}
