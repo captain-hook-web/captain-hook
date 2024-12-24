@@ -806,7 +806,7 @@ function HeroSection() {
                         direction="row"
                         px={2.5}
                         sx={{
-                          justifyContent: "space-between",
+                          justifyContent: "center",
                           alignItems: "center",
                         }}
                       >
