@@ -903,7 +903,7 @@ function HeroSection() {
                         >
                           $0.01
                         </Typography>
-                        <Typography
+{/*                         <Typography
                           sx={{
                             fontFamily: "Open Sans",
                             fontSize: "14px",
@@ -911,7 +911,7 @@ function HeroSection() {
                             lineHeight: "19.07px",
                             color: "#70DF00",
                             marginLeft: "10px"
-                          }}></Typography>
+                          }}></Typography> */}
                         <Box
                           sx={{
                             display: "flex",
