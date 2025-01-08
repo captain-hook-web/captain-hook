@@ -1,56 +1,56 @@
-// import {
-//   Box,
-//   Container,
-//   Stack,
-//   Grid,
-//   Typography,
-//   Divider,
-//   Button,
-//   InputAdornment,
-//   useMediaQuery,
-// } from "@mui/material";
+import {
+  Box,
+  Container,
+  Stack,
+  Grid,
+  Typography,
+  Divider,
+  Button,
+  InputAdornment,
+  useMediaQuery,
+} from "@mui/material";
 
-// import CountDownTimer from "../components/SmallComponents/Timer";
-// import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
+import CountDownTimer from "../components/SmallComponents/Timer";
+import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 
-// import {
-//   arrowIcon,
-//   bnbIcon,
-//   btcIcon,
-//   captainImg,
-//   ethIcon,
-//   heroBg,
-//   maticIcon,
-//   usdcIcon,
-//   usdtIcon,
-// } from "../components/SmallComponents/Images";
-// import { Fragment, useCallback, useContext, useEffect, useState } from "react";
-// import {
-//   StyledInput,
-//   ToastNotify,
-// } from "../components/SmallComponents/AppComponents";
-// import {
-//   btcTokenAddress,
-//   ethTokenAddress,
-//   maticTokenAddress,
-//   presaleAddress,
-//   presaleReadFunction,
-//   presaleWriteFunction,
-//   tokenAddress,
-//   tokenReadFunction,
-//   tokenWriteFunction,
-//   usdcTokenAddress,
-//   usdtTokenAddress,
-// } from "../ConnectivityAssets";
-// import { formatUnits, parseEther, parseUnits } from "viem";
-// import Loading from "../components/SmallComponents/loading";
-// import { useWeb3Modal } from "@web3modal/wagmi/react";
-// import { AppContext } from "../utils/utils";
-// import { getBalance } from "@wagmi/core";
-// import { config } from "../utils/Web3ModalProvider";
-// import Popup from "../components/popup/Popup";
+import {
+  arrowIcon,
+  bnbIcon,
+  btcIcon,
+  captainImg,
+  ethIcon,
+  heroBg,
+  maticIcon,
+  usdcIcon,
+  usdtIcon,
+} from "../components/SmallComponents/Images";
+import { Fragment, useCallback, useContext, useEffect, useState } from "react";
+import {
+  StyledInput,
+  ToastNotify,
+} from "../components/SmallComponents/AppComponents";
+import {
+  btcTokenAddress,
+  ethTokenAddress,
+  maticTokenAddress,
+  presaleAddress,
+  presaleReadFunction,
+  presaleWriteFunction,
+  tokenAddress,
+  tokenReadFunction,
+  tokenWriteFunction,
+  usdcTokenAddress,
+  usdtTokenAddress,
+} from "../ConnectivityAssets";
+import { formatUnits, parseEther, parseUnits } from "viem";
+import Loading from "../components/SmallComponents/loading";
+import { useWeb3Modal } from "@web3modal/wagmi/react";
+import { AppContext } from "../utils/utils";
+import { getBalance } from "@wagmi/core";
+import { config } from "../utils/Web3ModalProvider";
+import Popup from "../components/popup/Popup";
 
-// import "./style.css";
+import "./style.css";
 
 // const buttonDetails = [
 //   [
