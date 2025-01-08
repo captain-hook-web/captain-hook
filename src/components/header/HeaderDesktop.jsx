@@ -80,7 +80,7 @@ function HeaderDesktop({ onShow, onClosePopup }) {
                                                 } else if (item.text === "KYC") {
                                                     styles = "bg-sunset-yellow w-[49px] sm:w-[59px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
                                                 } else if (item.text === "Play") {
-                                                    // styles = "hidden"
+                                                    styles = "bg-sunset-yellow w-[65px] sm:w-[75px] h-[30px] text-smoky-gray rounded-[8px] leading-[30px]";
                                                 } else {
                                                     styles = "text-sunset-yellow text-sm sm:text-base";
                                                 }
