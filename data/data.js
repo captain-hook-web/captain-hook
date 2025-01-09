@@ -7,7 +7,7 @@ const DATA = {
         { id: 5, text: "Team" },
         // { id: 6, text: "FAQ" },
         // { id: 7, text: "Giveaway" },
-        { id: 8, text: "VIP Club" },
+        // { id: 8, text: "VIP Club" },
     ],
     HEADER_RIGHT: [
         { id: 1, text: "AUDIT", link: "https://app.solidproof.io/projects/captain-hook" },
