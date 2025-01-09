@@ -4,8 +4,6 @@ import "./style.css";
 import { useEffect, useState } from "react";
 
 function Popup({ onClosePopup, popup }) {
-    const [popup, setPopup] = useState(false); // مقدار اولیه false
-    const handleClosePopup = () => setPopup(false);
     
     return (
         <div className={`${popup ? "flex items-center justify-center w-full h-[100vh] bg-[#0b1023e6] fixed top-0 left-0 z-[1500]" : "hidden"}`}>
