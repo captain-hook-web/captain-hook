@@ -13,7 +13,7 @@ const DATA = {
         { id: 1, text: "AUDIT", link: "https://app.solidproof.io/projects/captain-hook" },
         { id: 2, text: "KYC", link: "https://github.com/solidproof/Projects/blob/main/2024/Captain%20Hook/KYC_Certificate_SolidProof_Captain_Hook.jpg" },
         { id: 3, text: "Whitepaper", link: "https://captain-hook.gitbook.io/white-paper" },
-        // { id: 4, text: "Play", subtile: "(Beta V)", link: "https://game.captainhook.io/" },
+        { id: 4, text: "Play", subtile: "(Beta V)", link: "https://game.captainhook.io/" },
     ],
     PRESALESLIDER: [
         { id: 1, text: "Presale is Live", link: "#" },
