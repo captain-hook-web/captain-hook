@@ -21,7 +21,7 @@ function Popup({ onClosePopup, popup }) {
                     <li><span>1.</span> <span className="text-lg">💰</span> Over $100: 10% bonus tokens</li>
                     <li><span>2.</span> <span className="text-lg">💰</span> Over $200: 30% bonus tokens</li>
                     <li><span>3.</span> <span className="text-lg">💰</span> Over $500: 60% bonus tokens</li>
-                    <li><span>3.</span> <span className="text-lg">💰</span> Over $1000: 70% bonus tokens</li>
+                    <li><span>4.</span> <span className="text-lg">💰</span> Over $1000: 70% bonus tokens</li>
                     {/* <li><span>4.</span> <span className="text-lg">🗳️</span> Voice in Project Decisions!</li>
                     <li><span>5.</span> <span className="text-lg">📣</span> Early Access to News and Announcements!</li>
                     <li><span>6.</span> <span className="text-lg">🏅</span> Special Participation Badges!</li> */}
