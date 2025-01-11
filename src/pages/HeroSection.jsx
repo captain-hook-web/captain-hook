@@ -166,13 +166,13 @@ function HeroSection() {
       title: "Total USDT Raised:",
       spend: overAllRaised?.sale,
       // total: overAllRaised?.total,
-      total: (overAllRaised?.total) && "105,000",
+      total: (overAllRaised?.total) && "110,000",
     },
     {
       title: `Phase ${currentStage + 1} USDT Raised:`,
       spend: currentStageDetail?.sale,
       // total: currentStageDetail?.total,
-      total: (currentStageDetail?.total) && "35,000",
+      total: (currentStageDetail?.total) && "40,000",
     },
   ];
   const priceData = [
