@@ -68,14 +68,14 @@ const DATA = {
             title: "Phase 3",
             subtitle1: "Q4 2024",
             subtitle2: "Fundraising & Marketing",
-            content: ["Token Presale", "Presale Marketing", "Marketing Campaign", "Staking System", "Feedback Collection and Refinement", "P2E Version Testing"]
+            content: ["Token Presale", "Presale Marketing", "Marketing Campaign", "Feedback Collection and Refinement", "P2E Version Testing"]
         },
         {
             id: 4,
             title: "Phase 4",
             subtitle1: "Q1 2025",
             subtitle2: "Official Launch",
-            content: ["Token Listing (DEX)", "Marketing", "P2E Version Release", "Live Ops & Events"]
+            content: ["Staking System", "Token Listing (DEX)", "Marketing", "P2E Version Release", "Live Ops & Events"]
         },
         {
             id: 5,
