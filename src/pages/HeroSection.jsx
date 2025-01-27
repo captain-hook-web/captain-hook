@@ -272,7 +272,7 @@ function HeroSection() {
 
       let totalSoldToken = 11205800;
       let totalTokenToSell = 0;
-      let currentStageSoldToken = 4110170;
+      let currentStageSoldToken = 4010170;
       let currentStageTokenSell = 0;
 
       for (let i = 0; i < totalStages; i++) {
