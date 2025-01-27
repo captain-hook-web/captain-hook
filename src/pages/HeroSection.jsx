@@ -270,9 +270,9 @@ function HeroSection() {
 
       const totalStages = Number(totalStagesRaw?.toString());
 
-      let totalSoldToken = 11205800;
+      let totalSoldToken = 11105800;
       let totalTokenToSell = 0;
-      let currentStageSoldToken = 4010170;
+      let currentStageSoldToken = 4000170;
       let currentStageTokenSell = 0;
 
       for (let i = 0; i < totalStages; i++) {
