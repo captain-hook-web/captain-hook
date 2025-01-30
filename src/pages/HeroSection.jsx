@@ -166,7 +166,7 @@ function HeroSection() {
       title: "Total USDT Raised:",
       spend: overAllRaised?.sale,
       // total: overAllRaised?.total,
-      total: (overAllRaised?.total) && "110,000",
+      total: (overAllRaised?.total) && "150,000",
     },
     {
       title: `Phase ${currentStage + 1} USDT Raised:`,
