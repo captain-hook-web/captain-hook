@@ -36,7 +36,7 @@ const DATA = {
         { id: 1, title: "Stage 1", price: "$0.005", goal: "$35,000" },
         { id: 2, title: "Stage 2", price: "$0.006", goal: "$35,000" },
         { id: 3, title: "Stage 3", price: "$0.007", goal: "$40,000" },
-        // { id: 4, title: "Stage 4", price: "$0.008", goal: "$40,000" },
+        { id: 4, title: "Stage 4", price: "$0.008", goal: "$40,000" },
         // { id: 5, title: "Stage 5", price: "$0.009", goal: "$50,400" },
         { id: 6, title: "DEX Launch", price: "$0.01" },
     ],
