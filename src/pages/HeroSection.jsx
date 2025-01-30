@@ -601,7 +601,7 @@ function HeroSection() {
                       {/* ENDS IN */}
                     </Typography>
                   </Box>
-{/*                 </Box>
+                </Box>
                 <Stack
                   sx={{
                     display: "flex",
@@ -646,7 +646,7 @@ function HeroSection() {
                     deviation, not even by a single day. In this, there are no
                     excuses.
                   </Typography>
-                </Box>} */}
+                </Box>}
                 <Box
                   mt={1}
                   py={1}
