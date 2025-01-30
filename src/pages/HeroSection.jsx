@@ -597,7 +597,7 @@ function HeroSection() {
                         textAlign: "center",
                       }}
                     >
-                      PHASE {currentStage + 1}
+                      PHASE {currentStage + 2}
                       {/* ENDS IN */}
                     </Typography>
                   </Box>
