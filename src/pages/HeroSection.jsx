@@ -10,7 +10,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 
-// import CountDownTimer from "../components/SmallComponents/Timer";
+import CountDownTimer from "../components/SmallComponents/Timer";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 
 import {
