@@ -609,7 +609,7 @@ function HeroSection() {
                     alignItems: "center",
                   }}
                 >
-                  <CountDownTimer time={1738195165} />
+{/*                   <CountDownTimer time={1738195165} />
                 </Stack>
                 {<Box
                   mt={2}
@@ -628,7 +628,7 @@ function HeroSection() {
                       lineHeight: "19.07px",
                       textAlign: "center",
                       color: "#FFAE02",
-                    }}
+                    }} */}
                   >
                     NO NASTY TRICKS
                   </Typography>
