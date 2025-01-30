@@ -10,7 +10,7 @@ function Popup({ onClosePopup, popup }) {
             <div className="relative bg-popup bg-no-repeat bg-[length:100%_100%] w-full max-w-[500px] h-auto pt-20 sm:pt-28 sm:pt-32  mt-10 scale-[.7] xl:scale-[1]">
                 <img src={Vip} alt="Vip Club" loading="lazy" className="w-[100%] absolute left-0 top-[-120px]" />
                 <h4 className="title-popup w-[85%] mx-auto text-white text-center text-[18px]">🎯 Exclusive Presale Last Stage Offer: More Tokens, More Rewards! 🎯</h4>
-                <p className="w-[80%] mx-auto open-sans-Medium text-white text-center text-[16px] my-2">🔹 Special rewards for Stage 3 presale investors:</p>
+                <p className="w-[80%] mx-auto open-sans-Medium text-white text-center text-[16px] my-2">🔹 Special rewards for last Stage 4 presale investors:</p>
                 {/* <div className="w-[98%] mx-auto bg-[#00000060] py-2">
                     <div id="timer" className="w-[70%] mx-auto">
                         <CountDownTimer time={1730937540} />
