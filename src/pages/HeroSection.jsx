@@ -10,7 +10,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 
-import CountDownTimer from "../components/SmallComponents/Timer";
+// import CountDownTimer from "../components/SmallComponents/Timer";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 
 import {
@@ -601,7 +601,7 @@ function HeroSection() {
                       {/* ENDS IN */}
                     </Typography>
                   </Box>
-                </Box>
+{/*                 </Box>
                 <Stack
                   sx={{
                     display: "flex",
@@ -609,7 +609,7 @@ function HeroSection() {
                     alignItems: "center",
                   }}
                 >
-{/*                   <CountDownTimer time={1738195165} />
+                  <CountDownTimer time={1738195165} />
                 </Stack>
                 {<Box
                   mt={2}
@@ -628,7 +628,7 @@ function HeroSection() {
                       lineHeight: "19.07px",
                       textAlign: "center",
                       color: "#FFAE02",
-                    }} */}
+                    }}
                   >
                     NO NASTY TRICKS
                   </Typography>
@@ -646,7 +646,7 @@ function HeroSection() {
                     deviation, not even by a single day. In this, there are no
                     excuses.
                   </Typography>
-                </Box>}
+                </Box>} */}
                 <Box
                   mt={1}
                   py={1}
