@@ -169,7 +169,7 @@ function HeroSection() {
       total: (overAllRaised?.total) && "150,000",
     },
     {
-      title: `Phase ${currentStage + 1} USDT Raised:`,
+      title: `Phase ${currentStage} USDT Raised:`,
       spend: currentStageDetail?.sale,
       // total: currentStageDetail?.total,
       total: (currentStageDetail?.total) && "40,000",
