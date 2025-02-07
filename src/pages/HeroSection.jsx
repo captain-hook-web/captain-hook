@@ -169,7 +169,7 @@ function HeroSection() {
       total: (overAllRaised?.total) && "150,000",
     },
     {
-      title: `Phase ${currentStage} USDT Raised:`,
+      title: `Phase ${currentStage + 1} USDT Raised:`,
       spend: currentStageDetail?.sale,
       // total: currentStageDetail?.total,
       total: (currentStageDetail?.total) && "40,000",
@@ -270,7 +270,7 @@ function HeroSection() {
 
       const totalStages = Number(totalStagesRaw?.toString());
 
-      let totalSoldToken = 13905800;
+      let totalSoldToken = 13605800;
       let totalTokenToSell = 0;
       let currentStageSoldToken = 4600170;
       let currentStageTokenSell = 0;
@@ -597,7 +597,7 @@ function HeroSection() {
                         textAlign: "center",
                       }}
                     >
-                      PHASE {currentStage + 2} 
+                      PHASE {currentStage + 1} 
                       {/* ENDS IN */}
                     </Typography>
                   </Box>
