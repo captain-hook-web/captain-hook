@@ -34,11 +34,11 @@
 
 @media (min-width: 1280px) {
     .MuiBox-root.css-1rm7u2e {
-        transform: scale(.8) translateX(0) translateY(50px);
-        -webkit-transform: scale(.8) translateX(0) translateY(50px);
-        -moz-transform: scale(.8) translateX(0) translateY(50px);
-        -ms-transform: scale(.8) translateX(0) translateY(50px);
-        -o-transform: scale(.8) translateX(0) translateY(50px);
+        transform: scale(.8) translateX(0) translateY(80px);
+        -webkit-transform: scale(.8) translateX(0) translateY(80px);
+        -moz-transform: scale(.8) translateX(0) translateY(80px);
+        -ms-transform: scale(.8) translateX(0) translateY(80px);
+        -o-transform: scale(.8) translateX(0) translateY(80px);
     }
 }
 
